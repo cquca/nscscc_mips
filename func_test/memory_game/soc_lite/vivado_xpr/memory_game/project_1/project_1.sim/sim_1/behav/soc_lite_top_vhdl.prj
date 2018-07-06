@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../xilinx_ip/ahblite_axi_bridge_0/sim/ahblite_axi_bridge_0.vhd"
+
+# Do not sort compile order
+nosort

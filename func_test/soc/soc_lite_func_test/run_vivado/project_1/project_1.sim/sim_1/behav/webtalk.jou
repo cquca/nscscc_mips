@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Aug 20 15:37:07 2017
+# Process ID: 21188
+# Current directory: C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.sim/sim_1/behav/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace

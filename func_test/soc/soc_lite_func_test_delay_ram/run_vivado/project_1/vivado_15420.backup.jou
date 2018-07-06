@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Aug 20 14:05:47 2017
+# Process ID: 15420
+# Current directory: C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10796 C:\Users\lvyuf\Desktop\result\func_test\soc\soc_lite_func_test_delay_ram\run_vivado\project_1\project_1.xpr
+# Log file: C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1/vivado.log
+# Journal file: C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+reset_run synth_1
+reset_run inst_ram_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/lvyuf/Desktop/result/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]

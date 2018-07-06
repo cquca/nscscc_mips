@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../../rtl/xilinx_ip/data_ram/sim/data_ram.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/xilinx_ip/inst_ram/sim/inst_ram.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/LLbit.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/ahb_bus_if.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/CONFREG/confreg.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/cp0_reg.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/ctrl.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/div.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/ex.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/ex_mem.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/hilo_reg.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/id.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/id_ex.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/if_id.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/mem.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/mem_wb.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/mips_top.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/pc_reg.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/MIPS/regfile.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/TOP/soc_lite_top.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/AMBA/sramlike_to_ahb.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+verilog xil_defaultlib  "../../../../../rtl/sim/tb_top.v" --include "../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../rtl/MIPS" --include "../../../../../rtl/CPU_gs132"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

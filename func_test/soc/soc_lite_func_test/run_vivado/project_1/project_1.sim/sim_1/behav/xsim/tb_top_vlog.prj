@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../rtl/MIPS" --include "../../../../../../rtl/CPU_gs132" --include "../../../../../../rtl/xilinx_ip/clk_pll" \
+"../../../../../../rtl/xilinx_ip/data_ram/data_ram_sim_netlist.v" \
+"../../../../../../rtl/xilinx_ip/inst_ram/inst_ram_sim_netlist.v" \
+"../../../../../../rtl/xilinx_ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0_sim_netlist.v" \
+"../../../../project_1.ip_user_files/ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../project_1.ip_user_files/ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/MIPS/LLbit.v" \
+"../../../../../../rtl/MIPS/ahb_bus_if.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../../../rtl/MIPS/cp0_reg.v" \
+"../../../../../../rtl/MIPS/ctrl.v" \
+"../../../../../../rtl/MIPS/div.v" \
+"../../../../../../rtl/MIPS/ex.v" \
+"../../../../../../rtl/MIPS/ex_mem.v" \
+"../../../../../../rtl/MIPS/hilo_reg.v" \
+"../../../../../../rtl/MIPS/id.v" \
+"../../../../../../rtl/MIPS/id_ex.v" \
+"../../../../../../rtl/MIPS/if_id.v" \
+"../../../../../../rtl/MIPS/mem.v" \
+"../../../../../../rtl/MIPS/mem_wb.v" \
+"../../../../../../rtl/MIPS/mips_top.v" \
+"../../../../../../rtl/MIPS/pc_reg.v" \
+"../../../../../../rtl/MIPS/regfile.v" \
+"../../../../../../rtl/TOP/soc_lite_top.v" \
+"../../../../../../rtl/AMBA/sramlike_to_ahb.v" \
+"../../../../../../rtl/sim/tb_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

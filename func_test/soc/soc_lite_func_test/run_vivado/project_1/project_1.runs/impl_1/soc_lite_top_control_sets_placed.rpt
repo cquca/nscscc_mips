@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sat Aug 19 16:10:01 2017
-| Host         : DESKTOP-A8FCU3E running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Fri Jul  6 12:19:50 2018
+| Host         : LV-1701 running 64-bit Ubuntu 16.04.4 LTS
 | Command      : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
 | Design       : soc_lite_top
 | Device       : xc7a200t
@@ -13,8 +13,9 @@ Control Set Information
 Table of Contents
 -----------------
 1. Summary
-2. Flip-Flop Distribution
-3. Detailed Control Set Information
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
 
 1. Summary
 ----------
@@ -23,117 +24,121 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    74 |
-| Unused register locations in slices containing registers |   147 |
+| Unused register locations in slices containing registers |   131 |
 +----------------------------------------------------------+-------+
 
 
-2. Flip-Flop Distribution
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|      2 |            1 |
+|      4 |            4 |
+|      5 |            3 |
+|      6 |            2 |
+|      7 |            1 |
+|    16+ |           60 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
 -------------------------
 
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             111 |           65 |
+| No           | No                    | No                     |             113 |           64 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             642 |          260 |
-| Yes          | No                    | No                     |             148 |           71 |
+| No           | Yes                   | No                     |             781 |          353 |
+| Yes          | No                    | No                     |             122 |           55 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            1744 |          725 |
+| Yes          | Yes                   | No                     |            1637 |          719 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
-3. Detailed Control Set Information
+4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
-|              Clock Signal              |                       Enable Signal                      |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
-+----------------------------------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
-|  mips_top0/mem_wb0/cause_o_reg[5]_1[0] |                                                          | mips_top0/cp0_reg0/SR[0]                              |                1 |              1 |
-|  clk_pll/inst/clk_out1                 | confreg/step1_sample                                     | mips_top0/cp0_reg0/SR[0]                              |                1 |              1 |
-|  clk_pll/inst/clk_out1                 | confreg/step0_sample                                     | mips_top0/cp0_reg0/SR[0]                              |                1 |              1 |
-|  clk_pll/inst/clk_out1                 |                                                          | ahblite_to_axi/U0/AXI_RCHANNEL/axi_last_avlbl_i_1_n_0 |                1 |              1 |
-|                                        |                                                          | mips_top0/cp0_reg0/SR[0]                              |                2 |              2 |
-|  clk_pll/inst/clk_out1                 | mips_top0/inst_ahb_bus_if/rd_buf_reg[31]_2               |                                                       |                1 |              4 |
-|  clk_pll/inst/clk_out1                 | mips_top0/mem_wb0/cause_o_reg[8][0]                      | mips_top0/cp0_reg0/SR[0]                              |                2 |              4 |
-|  clk_pll/inst/clk_out1                 |                                                          | confreg/state_count[3]_i_1_n_11                       |                1 |              4 |
-|  clk_pll/inst/clk_out1                 | mips_top0/div0/cnt[5]_i_2_n_11                           | mips_top0/div0/cnt[5]_i_1_n_11                        |                1 |              4 |
-|  mips_top0/id_ex0/E[0]                 |                                                          |                                                       |                2 |              5 |
-|  clk_pll/inst/clk_out1                 | ahblite_to_axi/U0/AHB_IF/E[0]                            | ahblite_to_axi/U0/AHB_IF/SR[0]                        |                2 |              5 |
-|  clk_pll/inst/clk_out1                 | ahblite_to_axi/U0/AHBLITE_AXI_CONTROL/E[0]               | ahblite_to_axi/U0/AHB_IF/SR[0]                        |                3 |              5 |
-|  clk_pll/inst/clk_out1                 | mips_top0/ex_mem0/cause_o_reg[31][0]                     | mips_top0/cp0_reg0/SR[0]                              |                4 |              5 |
-|  clk_pll/inst/clk_out1                 | ahblite_to_axi/U0/AHB_IF/burst_term_txer_cnt_i0          | ahblite_to_axi/U0/AHB_IF/SR[0]                        |                2 |              8 |
-|  clk_pll/inst/clk_out1                 | mips_top0/data_ahb_bus_if/ena                            |                                                       |               11 |             16 |
-|  clk_pll/inst/clk_out1                 | mips_top0/data_ahb_bus_if/mem_3bytes_addr_reg[31][0]     |                                                       |                4 |             16 |
-|  clk_pll/inst/clk_out1                 | ahblite_to_axi/U0/AHB_IF/AXI_ALEN_i0                     | ahblite_to_axi/U0/AHB_IF/SR[0]                        |                6 |             16 |
-|  clk_pll/inst/clk_out1                 | sramlike_to_ahb/mem_3bytes_data0                         |                                                       |                9 |             16 |
-|  clk_pll/inst/clk_out1                 | confreg/busy01_out                                       | mips_top0/cp0_reg0/SR[0]                              |                5 |             17 |
-|  clk_pll/inst/clk_out1                 |                                                          | confreg/key_count[0]_i_1_n_11                         |                5 |             20 |
-|  clk_pll/inst/clk_out1                 |                                                          | confreg/step0_count[0]_i_1_n_11                       |                5 |             20 |
-|  clk_pll/inst/clk_out1                 |                                                          | confreg/step1_count[0]_i_1_n_11                       |                5 |             20 |
-|  clk_pll/inst/clk_out1                 |                                                          | ahblite_to_axi/U0/AHB_IF/SR[0]                        |               11 |             26 |
-|  clk_pll/inst/clk_out1                 | mips_top0/mem_wb0/status_o_reg[2][0]                     | mips_top0/cp0_reg0/SR[0]                              |               17 |             31 |
-|  n_6_1110_BUFG                         |                                                          | mips_top0/cp0_reg0/SR[0]                              |               19 |             32 |
-|  n_10_2655_BUFG                        |                                                          | mips_top0/cp0_reg0/SR[0]                              |               12 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/mem_wb0/compare_o_reg[31]_0[0]                 | mips_top0/cp0_reg0/SR[0]                              |               16 |             32 |
-|  n_2_300_BUFG                          |                                                          | mips_top0/cp0_reg0/SR[0]                              |               18 |             32 |
-|  n_3_184_BUFG                          |                                                          | mips_top0/cp0_reg0/SR[0]                              |               15 |             32 |
-|  n_4_1043_BUFG                         |                                                          | mips_top0/cp0_reg0/SR[0]                              |               21 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/ex_mem0/badvaddr_reg[31][0]                    |                                                       |               19 |             32 |
-|  n_7_2191_BUFG                         |                                                          | mips_top0/cp0_reg0/SR[0]                              |               13 |             32 |
-|  n_8_2196_BUFG                         |                                                          | mips_top0/cp0_reg0/SR[0]                              |               14 |             32 |
-|  n_9_2554_BUFG                         |                                                          | mips_top0/cp0_reg0/SR[0]                              |               15 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/mem_wb0/epc_o_reg[31][0]                       | mips_top0/cp0_reg0/SR[0]                              |               15 |             32 |
-|  n_5_146_BUFG                          |                                                          | mips_top0/cp0_reg0/SR[0]                              |               18 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr00[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               17 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr01[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               15 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/inst_ahb_bus_if/rd_buf[31]_i_1_n_11            | mips_top0/cp0_reg0/SR[0]                              |               16 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr03[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               13 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/div0/dividend[64]_i_2_n_11                     | mips_top0/div0/dividend[64]_i_1_n_11                  |               13 |             32 |
-|  clk_pll/inst/clk_out1                 | ahblite_to_axi/U0/AXI_RCHANNEL/rd_load_timeout_cntr      | ahblite_to_axi/U0/AHB_IF/SR[0]                        |               10 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr02[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               14 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/write_order_reg                                  | mips_top0/cp0_reg0/SR[0]                              |               14 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/s_rdata[31]_i_1_n_11                             | mips_top0/cp0_reg0/SR[0]                              |               18 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr05[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               19 |             32 |
-|  clk_pll/inst/clk_out1                 | ahblite_to_axi/U0/AXI_WCHANNEL/M_AXI_WDATA_i[31]_i_1_n_0 | ahblite_to_axi/U0/AHB_IF/SR[0]                        |               14 |             32 |
-|  clk_pll/inst/clk_out1                 | sramlike_to_ahb/ahb_wdata0                               | mips_top0/cp0_reg0/SR[0]                              |               10 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/write_num                                        | mips_top0/cp0_reg0/SR[0]                              |                6 |             32 |
-|  clk_pll/inst/clk_out1                 | ahblite_to_axi/U0/AXI_WCHANNEL/local_wdata[31]_i_1_n_0   | ahblite_to_axi/U0/AHB_IF/SR[0]                        |               11 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr07[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               18 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/ex_mem0/pc_reg[0][0]                           | mips_top0/pc_reg0/p_0_in                              |               14 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/ex_mem0/rd_buf_reg[0][0]                       | mips_top0/cp0_reg0/SR[0]                              |               10 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/div0/divisor[31]_i_1_n_11                      |                                                       |               14 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr06[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               18 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/id_ex0/dividend_reg[2][0]                      |                                                       |               13 |             32 |
-|  clk_pll/inst/clk_out1                 | confreg/cr04[31]_i_1_n_11                                | mips_top0/cp0_reg0/SR[0]                              |               18 |             32 |
-|  clk_pll/inst/clk_out1                 | mips_top0/inst_ahb_bus_if/addr[31]_i_1_n_11              | mips_top0/cp0_reg0/SR[0]                              |                9 |             33 |
-|  clk_pll/inst/clk_out1                 | confreg/write_led_rg0                                    | mips_top0/cp0_reg0/SR[0]                              |               15 |             34 |
-|  clk_pll/inst/clk_out1                 | confreg/write_led_rg1                                    | mips_top0/cp0_reg0/SR[0]                              |               16 |             34 |
-|  clk_pll/inst/clk_out1                 |                                                          |                                                       |               32 |             42 |
-|  clk_pll/inst/clk_out1                 | confreg/write_led                                        | mips_top0/cp0_reg0/SR[0]                              |               22 |             48 |
-|  n_1_1805_BUFG                         |                                                          |                                                       |               31 |             64 |
-|  clk_pll/inst/clk_out1                 | mips_top0/mem_wb0/wb_whilo_i                             | mips_top0/cp0_reg0/SR[0]                              |               37 |             64 |
-|  clk_pll/inst/clk_out1                 | mips_top0/div0/id_inst_reg[0]                            | mips_top0/ex_mem0/SR[0]                               |               28 |             64 |
-|  clk_pll/inst/clk_out1                 | mips_top0/div0/result_o[63]_i_1_n_11                     | mips_top0/cp0_reg0/SR[0]                              |               19 |             65 |
-|  clk_pll/inst/clk_out1                 |                                                          | mips_top0/ex_mem0/SR[0]                               |               13 |             66 |
-|  n_0_4649_BUFG                         |                                                          | mips_top0/cp0_reg0/SR[0]                              |               30 |             66 |
-|  clk_pll/inst/clk_out1                 | mips_top0/ex_mem0/din_reg[0][0]                          | mips_top0/cp0_reg0/SR[0]                              |               23 |             69 |
-|  clk_pll/inst/clk_out1                 | mips_top0/mem_wb0/p_0_in1_out                            |                                                       |               12 |             96 |
-|  clk_pll/inst/clk_out1                 |                                                          | mips_top0/cp0_reg0/SR[0]                              |               41 |            128 |
-|  clk_pll/inst/clk_out1                 | mips_top0/data_ahb_bus_if/wb_LLbit_value_reg_0[0]        | mips_top0/ex_mem0/wb_LLbit_value_reg_0[0]             |               52 |            143 |
-|  clk_pll/inst/clk_out1                 | mips_top0/div0/id_inst_reg[0]                            | mips_top0/div0/ex_link_address_reg[0]                 |               52 |            169 |
-|  clk_pll/inst/clk_out1                 | mips_top0/data_ahb_bus_if/mem_cp0_reg_data_reg[0][0]     | mips_top0/data_ahb_bus_if/mem_cp0_reg_data_reg[0]_0   |              109 |            252 |
-+----------------------------------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
-
-
-+--------+-----------------------+
-| Fanout | Number of ControlSets |
-+--------+-----------------------+
-| 1      |                     4 |
-| 2      |                     1 |
-| 4      |                     4 |
-| 5      |                     4 |
-| 8      |                     1 |
-| 16+    |                    60 |
-+--------+-----------------------+
++-------------------------+----------------------------------------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|       Clock Signal      |                                      Enable Signal                                     |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-------------------------+----------------------------------------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  clk_pll/inst/clk_out1  | confreg/step0_sample                                                                   | mips_top0/cp0_reg0/SR[0]                      |                1 |              1 |
+|  clk_pll/inst/clk_out1  | confreg/step1_sample                                                                   | mips_top0/cp0_reg0/SR[0]                      |                1 |              1 |
+|  mips_top0/mem_wb0/E[0] |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |                1 |              1 |
+|                         |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |                1 |              2 |
+|  clk_pll/inst/clk_out1  | mips_top0/mem_wb0/cause_o_reg[22][0]                                                   | mips_top0/cp0_reg0/SR[0]                      |                2 |              4 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AHB_IF/E[0]                                                          | ahblite_to_axi/U0/AHB_IF/SR[0]                |                1 |              4 |
+|  clk_pll/inst/clk_out1  | mips_top0/inst_ahb_bus_if/rd_buf_reg[31]_0                                             |                                               |                2 |              4 |
+|  clk_pll/inst/clk_out1  |                                                                                        | confreg/state_count[3]_i_1_n_11               |                1 |              4 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AXI_WCHANNEL/AXI_WRITE_CNT_MODULE/INFERRED_GEN.icount_out[4]_i_1_n_0 | ahblite_to_axi/U0/AHB_IF/SR[0]                |                1 |              5 |
+|  mips_top0/id_ex0/E[0]  |                                                                                        |                                               |                2 |              5 |
+|  clk_pll/inst/clk_out1  | mips_top0/ex_mem0/cause_o_reg[2][0]                                                    | mips_top0/cp0_reg0/SR[0]                      |                4 |              5 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AHBLITE_AXI_CONTROL/FSM_onehot_ctl_sm_cs[6]_i_1_n_0                  | ahblite_to_axi/U0/AHB_IF/SR[0]                |                2 |              6 |
+|  clk_pll/inst/clk_out1  | mips_top0/div0/cnt[5]_i_1_n_11                                                         |                                               |                1 |              6 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AHBLITE_AXI_CONTROL/E[0]                                             | ahblite_to_axi/U0/AHB_IF/SR[0]                |                2 |              7 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AHB_IF/AXI_ALEN_i0                                                   | ahblite_to_axi/U0/AHB_IF/SR[0]                |                6 |             16 |
+|  clk_pll/inst/clk_out1  | mips_top0/data_ahb_bus_if/mem_3bytes_addr_reg[31][0]                                   |                                               |                6 |             16 |
+|  clk_pll/inst/clk_out1  | mips_top0/inst_ahb_bus_if/ena                                                          |                                               |                9 |             16 |
+|  clk_pll/inst/clk_out1  | sramlike_to_ahb/mem_3bytes_data0                                                       |                                               |                7 |             16 |
+|  clk_pll/inst/clk_out1  | confreg/busy01_out                                                                     | mips_top0/cp0_reg0/SR[0]                      |                5 |             17 |
+|  clk_pll/inst/clk_out1  |                                                                                        | confreg/step0_count[0]_i_1_n_11               |                5 |             20 |
+|  clk_pll/inst/clk_out1  |                                                                                        | confreg/key_count[0]_i_1_n_11                 |                5 |             20 |
+|  clk_pll/inst/clk_out1  |                                                                                        | confreg/step1_count[0]_i_1_n_11               |                5 |             20 |
+|  clk_pll/inst/clk_out1  |                                                                                        | ahblite_to_axi/U0/AHB_IF/SR[0]                |                9 |             23 |
+|  clk_pll/inst/clk_out1  | mips_top0/mem_wb0/status_o_reg[2]                                                      | mips_top0/cp0_reg0/SR[0]                      |               14 |             31 |
+|  clk_pll/inst/clk_out1  | mips_top0/div0/dividend[31]_i_2_n_11                                                   | mips_top0/div0/dividend[31]_i_1_n_11          |               13 |             31 |
+|  clk_pll/inst/clk_out1  | mips_top0/ex_mem0/E[0]                                                                 | mips_top0/pc_reg0/p_0_in                      |               13 |             32 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AXI_RCHANNEL/S_AHB_HRDATA_i_reg[31][0]                               | ahblite_to_axi/U0/AHB_IF/SR[0]                |                8 |             32 |
+|  n_10_2619_BUFG         |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               14 |             32 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AXI_WCHANNEL/M_AXI_WDATA_i_reg[31]_0                                 | ahblite_to_axi/U0/AHB_IF/SR[0]                |               15 |             32 |
+|  clk_pll/inst/clk_out1  | sramlike_to_ahb/ahb_wdata0                                                             | mips_top0/cp0_reg0/SR[0]                      |               15 |             32 |
+|  clk_pll/inst/clk_out1  | ahblite_to_axi/U0/AXI_WCHANNEL/local_wdata0                                            | ahblite_to_axi/U0/AHB_IF/SR[0]                |               14 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/mem_wb0/epc_o_reg[31][0]                                                     | mips_top0/cp0_reg0/SR[0]                      |               10 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/ex_mem0/badvaddr_reg[31]_0[0]                                                |                                               |               18 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/ex_mem0/rd_buf_reg[0][0]                                                     | mips_top0/cp0_reg0/SR[0]                      |               13 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/mem_wb0/compare_o_reg[31][0]                                                 | mips_top0/cp0_reg0/SR[0]                      |               16 |             32 |
+|  n_2_325_BUFG           |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               11 |             32 |
+|  n_9_2483_BUFG          |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               17 |             32 |
+|  n_8_2130_BUFG          |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               14 |             32 |
+|  n_7_2125_BUFG          |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               12 |             32 |
+|  n_6_1398_BUFG          |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               21 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/write_num                                                                      | mips_top0/cp0_reg0/SR[0]                      |                7 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr00[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               16 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr07[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               15 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/inst_ahb_bus_if/rd_buf[31]_i_1_n_11                                          | mips_top0/cp0_reg0/SR[0]                      |               20 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/div0/dividend[64]_i_2_n_11                                                   | mips_top0/div0/dividend[64]_i_1_n_11          |               10 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr06[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               13 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr05[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               15 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr04[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               16 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr03[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               15 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr02[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               19 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/cr01[31]_i_1_n_11                                                              | mips_top0/cp0_reg0/SR[0]                      |               17 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/write_order_reg                                                                | mips_top0/cp0_reg0/SR[0]                      |               14 |             32 |
+|  n_5_114_BUFG           |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               18 |             32 |
+|  n_4_4086_BUFG          |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               22 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/div0/divisor[31]_i_1_n_11                                                    |                                               |               12 |             32 |
+|  n_3_257_BUFG           |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               14 |             32 |
+|  clk_pll/inst/clk_out1  | confreg/s_rdata[31]_i_1_n_11                                                           | mips_top0/cp0_reg0/SR[0]                      |               13 |             32 |
+|  clk_pll/inst/clk_out1  | mips_top0/inst_ahb_bus_if/addr[31]_i_1_n_11                                            | mips_top0/cp0_reg0/SR[0]                      |                6 |             33 |
+|  clk_pll/inst/clk_out1  | confreg/write_led_rg0                                                                  | mips_top0/cp0_reg0/SR[0]                      |               21 |             34 |
+|  clk_pll/inst/clk_out1  | confreg/write_led_rg1                                                                  | mips_top0/cp0_reg0/SR[0]                      |               14 |             34 |
+|  clk_pll/inst/clk_out1  |                                                                                        |                                               |               30 |             44 |
+|  clk_pll/inst/clk_out1  | confreg/write_led                                                                      | mips_top0/cp0_reg0/SR[0]                      |               28 |             48 |
+|  clk_pll/inst/clk_out1  | mips_top0/mem_wb0/wb_whilo_i                                                           | mips_top0/cp0_reg0/SR[0]                      |               42 |             64 |
+|  clk_pll/inst/clk_out1  | mips_top0/ex0/id_inst_reg[0]_0                                                         | mips_top0/ex_mem0/SR[0]                       |               23 |             64 |
+|  n_1_4376_BUFG          |                                                                                        |                                               |               32 |             64 |
+|  clk_pll/inst/clk_out1  | mips_top0/div0/result_o[63]_i_1_n_11                                                   | mips_top0/cp0_reg0/SR[0]                      |               32 |             65 |
+|  n_0_4590_BUFG          |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               42 |             66 |
+|  clk_pll/inst/clk_out1  |                                                                                        | mips_top0/ex_mem0/SR[0]                       |               18 |             66 |
+|  clk_pll/inst/clk_out1  | mips_top0/data_ahb_bus_if/addr[31]_i_1__0_n_11                                         | mips_top0/cp0_reg0/SR[0]                      |               21 |             69 |
+|  clk_pll/inst/clk_out1  | mips_top0/mem_wb0/ex_reg1_reg[31]                                                      |                                               |               12 |             96 |
+|  clk_pll/inst/clk_out1  |                                                                                        | mips_top0/cp0_reg0/SR[0]                      |               39 |            128 |
+|  clk_pll/inst/clk_out1  |                                                                                        | mips_top0/ex_mem0/wb_cp0_reg_data_reg[0]      |               84 |            143 |
+|  clk_pll/inst/clk_out1  | mips_top0/ex0/id_inst_reg[0]_0                                                         | mips_top0/ex0/ex_link_address_reg[0]          |               63 |            174 |
+|  clk_pll/inst/clk_out1  | mips_top0/data_ahb_bus_if/E[0]                                                         | mips_top0/ex_mem0/mem_excepttype[13]_i_1_n_11 |              123 |            252 |
++-------------------------+----------------------------------------------------------------------------------------+-----------------------------------------------+------------------+----------------+
 
 

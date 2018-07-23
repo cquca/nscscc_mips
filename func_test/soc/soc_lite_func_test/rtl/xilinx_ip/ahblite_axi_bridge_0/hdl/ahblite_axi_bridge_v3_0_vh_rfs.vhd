@@ -474,7 +474,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
-library ahblite_axi_bridge_v3_0_10;
+library ahblite_axi_bridge_v3_0_13;
 -------------------------------------------------------------------------------
 -- Port Declaration
 -------------------------------------------------------------------------------
@@ -623,7 +623,7 @@ begin
 -- To count the number of clock pulses lapsed after the transfer is initiated
 -- on the AHB side.
 --------------------------------------------------------------------------------
-    WDT_COUNTER_MODULE : entity ahblite_axi_bridge_v3_0_10.counter_f
+    WDT_COUNTER_MODULE : entity ahblite_axi_bridge_v3_0_13.counter_f
        generic map(
          C_NUM_BITS    =>  COUNTER_WIDTH,
          C_FAMILY      =>  C_FAMILY
@@ -764,8 +764,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-library ahblite_axi_bridge_v3_0_10;
-use ahblite_axi_bridge_v3_0_10.ahblite_axi_bridge_pkg.all;
+library ahblite_axi_bridge_v3_0_13;
+use ahblite_axi_bridge_v3_0_13.ahblite_axi_bridge_pkg.all;
 -------------------------------------------------------------------------------
 -- Port Declaration
 -------------------------------------------------------------------------------
@@ -1674,7 +1674,7 @@ placed_on_axi  <= axi_wr_channel_ready_i and ahb_data_valid and  not local_en;
 --------------------------------------------------------------------------------
 --To count the valid transfer placed on the AXI interface
 --------------------------------------------------------------------------------
-  AXI_WRITE_CNT_MODULE : entity ahblite_axi_bridge_v3_0_10.counter_f
+  AXI_WRITE_CNT_MODULE : entity ahblite_axi_bridge_v3_0_13.counter_f
      generic map(
        C_NUM_BITS    =>  AXI_WRITE_CNT_WIDTH,
        C_FAMILY      =>  C_FAMILY
@@ -1830,8 +1830,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-library ahblite_axi_bridge_v3_0_10;
-use ahblite_axi_bridge_v3_0_10.ahblite_axi_bridge_pkg.all;
+library ahblite_axi_bridge_v3_0_13;
+use ahblite_axi_bridge_v3_0_13.ahblite_axi_bridge_pkg.all;
 -------------------------------------------------------------------------------
 -- Port Declaration
 -------------------------------------------------------------------------------
@@ -2305,8 +2305,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-library ahblite_axi_bridge_v3_0_10;
-use ahblite_axi_bridge_v3_0_10.ahblite_axi_bridge_pkg.all;
+library ahblite_axi_bridge_v3_0_13;
+use ahblite_axi_bridge_v3_0_13.ahblite_axi_bridge_pkg.all;
 -------------------------------------------------------------------------------
 -- Port Declaration
 -------------------------------------------------------------------------------
@@ -3319,8 +3319,8 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 
-library ahblite_axi_bridge_v3_0_10;
-use ahblite_axi_bridge_v3_0_10.ahblite_axi_bridge_pkg.all;
+library ahblite_axi_bridge_v3_0_13;
+use ahblite_axi_bridge_v3_0_13.ahblite_axi_bridge_pkg.all;
 
 -------------------------------------------------------------------------------
 -- Port Declaration
@@ -3431,7 +3431,7 @@ cntr_enable    <= ahb_hwrite   and
 -- Increment for every sequential transfer there after,except
 -- for the indefinite length increment transfer.
 --------------------------------------------------------------------------------
-  AHB_SAMPLE_CNT_MODULE : entity ahblite_axi_bridge_v3_0_10.counter_f
+  AHB_SAMPLE_CNT_MODULE : entity ahblite_axi_bridge_v3_0_13.counter_f
      generic map(
        C_NUM_BITS    =>  AHB_SAMPLE_CNT_WIDTH,
        C_FAMILY      =>  C_FAMILY
@@ -3549,8 +3549,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-library ahblite_axi_bridge_v3_0_10;
-use ahblite_axi_bridge_v3_0_10.ahblite_axi_bridge_pkg.all;
+library ahblite_axi_bridge_v3_0_13;
+use ahblite_axi_bridge_v3_0_13.ahblite_axi_bridge_pkg.all;
 -------------------------------------------------------------------------------
 -- Port Declaration
 -------------------------------------------------------------------------------
@@ -4090,7 +4090,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-library ahblite_axi_bridge_v3_0_10;
+library ahblite_axi_bridge_v3_0_13;
 
 -------------------------------------------------------------------------------
 -- Port Declaration
@@ -4432,7 +4432,7 @@ begin
 -------------------------------------------------------------------------------
 -- Instantiate the control module
 -------------------------------------------------------------------------------
-  AHBLITE_AXI_CONTROL : entity ahblite_axi_bridge_v3_0_10.ahblite_axi_control
+  AHBLITE_AXI_CONTROL : entity ahblite_axi_bridge_v3_0_13.ahblite_axi_control
   port map
   ( 
   -- AHB Signals
@@ -4478,7 +4478,7 @@ begin
 --------------------------------------------------------------------------------
 -- ahb interface instantiation
 --------------------------------------------------------------------------------
-  AHB_IF :entity ahblite_axi_bridge_v3_0_10.ahb_if
+  AHB_IF :entity ahblite_axi_bridge_v3_0_13.ahb_if
   generic map (
     C_M_AXI_ADDR_WIDTH            => C_M_AXI_ADDR_WIDTH     ,         
     C_S_AHB_ADDR_WIDTH            => C_S_AHB_ADDR_WIDTH     ,         
@@ -4561,7 +4561,7 @@ begin
 --AHB data counter to count the number of valid(NONSEQ or SEQ) samples
 -- received during a burst.
 --------------------------------------------------------------------------------
-  AHB_DATA_COUNTER : entity ahblite_axi_bridge_v3_0_10.ahb_data_counter
+  AHB_DATA_COUNTER : entity ahblite_axi_bridge_v3_0_13.ahb_data_counter
   port map
   (
   -- AHB Signals
@@ -4578,7 +4578,7 @@ begin
 --------------------------------------------------------------------------------
 --axi_wchannel instantiation
 --------------------------------------------------------------------------------
-  AXI_WCHANNEL : entity ahblite_axi_bridge_v3_0_10.axi_wchannel
+  AXI_WCHANNEL : entity ahblite_axi_bridge_v3_0_13.axi_wchannel
   generic map (
     C_S_AHB_ADDR_WIDTH            => C_S_AHB_ADDR_WIDTH           ,         
     C_M_AXI_ADDR_WIDTH            => C_M_AXI_ADDR_WIDTH           ,         
@@ -4638,7 +4638,7 @@ begin
 --------------------------------------------------------------------------------
 --axi_rchannel instantiation
 --------------------------------------------------------------------------------
-  AXI_RCHANNEL : entity ahblite_axi_bridge_v3_0_10.axi_rchannel
+  AXI_RCHANNEL : entity ahblite_axi_bridge_v3_0_13.axi_rchannel
   generic map (
     C_S_AHB_ADDR_WIDTH            => C_S_AHB_ADDR_WIDTH           ,         
     C_M_AXI_ADDR_WIDTH            => C_M_AXI_ADDR_WIDTH           ,         
@@ -4675,7 +4675,7 @@ begin
 --------------------------------------------------------------------------------
 --time_out module instantiation
 --------------------------------------------------------------------------------
-  TIME_OUT : entity ahblite_axi_bridge_v3_0_10.time_out
+  TIME_OUT : entity ahblite_axi_bridge_v3_0_13.time_out
   generic map (
     C_FAMILY              => C_FAMILY       ,
     C_AHB_AXI_TIMEOUT     => C_AHB_AXI_TIMEOUT

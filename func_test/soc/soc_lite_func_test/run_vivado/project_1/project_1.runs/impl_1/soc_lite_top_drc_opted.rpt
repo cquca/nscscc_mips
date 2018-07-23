@@ -1,14 +1,14 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sat Aug 19 16:08:56 2017
-| Host         : DESKTOP-A8FCU3E running 64-bit major release  (build 9200)
-| Command      : report_drc -file soc_lite_top_drc_opted.rpt
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Fri Jul  6 12:19:14 2018
+| Host         : LV-1701 running 64-bit Ubuntu 16.04.4 LTS
+| Command      : report_drc -file soc_lite_top_drc_opted.rpt -pb soc_lite_top_drc_opted.pb -rpx soc_lite_top_drc_opted.rpx
 | Design       : soc_lite_top
 | Device       : xc7a200tfbg676-2
 | Speed File   : -2
 | Design State : Synthesized
-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 
 Report DRC
 
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 17
+             Violations found: 16
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| DPIP-1   | Warning  | Input pipelining                                    | 8          |
+| DPIP-1   | Warning  | Input pipelining                                    | 7          |
 | DPOP-1   | Warning  | PREG Output pipelining                              | 4          |
 | DPOP-2   | Warning  | MREG Output pipelining                              | 4          |
 +----------+----------+-----------------------------------------------------+------------+
@@ -80,11 +80,6 @@ DSP mips_top0/ex0/hilo_temp__1 input mips_top0/ex0/hilo_temp__1/B[17:0] is not p
 Related violations: <none>
 
 DPIP-1#7 Warning
-Input pipelining  
-DSP mips_top0/ex0/hilo_temp__2 input mips_top0/ex0/hilo_temp__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#8 Warning
 Input pipelining  
 DSP mips_top0/ex0/hilo_temp__2 input mips_top0/ex0/hilo_temp__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>

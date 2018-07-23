@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2017.1 (64-bit)
-# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
-# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Thu Aug 17 11:35:01 2017
-# Process ID: 21924
-# Current directory: C:/Users/lvyuf/Desktop/NSCSCC_TRYOUT/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/data_ram_synth_1
-# Command line: vivado.exe -log data_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_ram.tcl
-# Log file: C:/Users/lvyuf/Desktop/NSCSCC_TRYOUT/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/data_ram_synth_1/data_ram.vds
-# Journal file: C:/Users/lvyuf/Desktop/NSCSCC_TRYOUT/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/data_ram_synth_1\vivado.jou
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Jul  6 12:06:53 2018
+# Process ID: 18047
+# Current directory: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/data_ram_synth_1
+# Command line: vivado -log data_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_ram.tcl
+# Log file: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/data_ram_synth_1/data_ram.vds
+# Journal file: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/data_ram_synth_1/vivado.jou
 #-----------------------------------------------------------
 source data_ram.tcl -notrace

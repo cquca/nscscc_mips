@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Sat Aug 19 16:12:18 2017
-| Host             : DESKTOP-A8FCU3E running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date             : Fri Jul  6 12:20:51 2018
+| Host             : LV-1701 running 64-bit Ubuntu 16.04.4 LTS
 | Command          : report_power -file soc_lite_top_power_routed.rpt -pb soc_lite_top_power_summary_routed.pb -rpx soc_lite_top_power_routed.rpx
 | Design           : soc_lite_top
 | Device           : xc7a200tfbg676-2
@@ -29,18 +29,21 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 0.270 |
-| Dynamic (W)              | 0.118 |
-| Device Static (W)        | 0.153 |
-| Effective TJA (C/W)      | 1.9   |
-| Max Ambient (C)          | 84.5  |
-| Junction Temperature (C) | 25.5  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.275        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.122        |
+| Device Static (W)        | 0.153        |
+| Effective TJA (C/W)      | 1.9          |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
 1.1 On-Chip Components
@@ -50,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.010 |        5 |       --- |             --- |
-| Slice Logic              |     0.002 |     9644 |       --- |             --- |
-|   LUT as Logic           |     0.001 |     4700 |    133800 |            3.51 |
+| Slice Logic              |     0.003 |     9808 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     4959 |    133800 |            3.71 |
 |   CARRY4                 |    <0.001 |      233 |     33450 |            0.70 |
-|   Register               |    <0.001 |     2645 |    267600 |            0.99 |
+|   Register               |    <0.001 |     2653 |    267600 |            0.99 |
 |   BUFG                   |    <0.001 |       11 |        32 |           34.38 |
-|   F7/F8 Muxes            |    <0.001 |      433 |    133800 |            0.32 |
+|   F7/F8 Muxes            |    <0.001 |      462 |    133800 |            0.35 |
 |   LUT as Distributed RAM |    <0.001 |       48 |     46200 |            0.10 |
-|   Others                 |     0.000 |      962 |       --- |             --- |
-| Signals                  |     0.002 |     9459 |       --- |             --- |
+|   Others                 |     0.000 |      964 |       --- |             --- |
+| Signals                  |     0.004 |     9706 |       --- |             --- |
 | Block RAM                |     0.002 |    305.5 |       365 |           83.70 |
 | PLL                      |     0.099 |        1 |        10 |           10.00 |
-| DSPs                     |     0.000 |        4 |       740 |            0.54 |
-| I/O                      |     0.002 |       55 |       400 |           13.75 |
+| DSPs                     |    <0.001 |        4 |       740 |            0.54 |
+| I/O                      |     0.003 |       55 |       400 |           13.75 |
 | Static Power             |     0.153 |          |           |                 |
-| Total                    |     0.270 |          |           |                 |
+| Total                    |     0.275 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.062 |       0.025 |      0.037 |
+| Vccint    |       1.000 |     0.066 |       0.029 |      0.037 |
 | Vccaux    |       1.800 |     0.081 |       0.050 |      0.031 |
 | Vcco33    |       3.300 |     0.006 |       0.001 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -145,7 +148,7 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| soc_lite_top                                 |     0.118 |
+| soc_lite_top                                 |     0.122 |
 |   ahblite_to_axi                             |    <0.001 |
 |     U0                                       |    <0.001 |
 |       AHBLITE_AXI_CONTROL                    |    <0.001 |
@@ -158,11 +161,11 @@ Table of Contents
 |   clk_pll                                    |     0.100 |
 |     inst                                     |     0.100 |
 |   confreg                                    |     0.003 |
-|   data_ram                                   |     0.003 |
-|     U0                                       |     0.003 |
-|       inst_blk_mem_gen                       |     0.003 |
-|         gnbram.gnativebmg.native_blk_mem_gen |     0.003 |
-|           valid.cstr                         |     0.003 |
+|   data_ram                                   |     0.002 |
+|     U0                                       |     0.002 |
+|       inst_blk_mem_gen                       |     0.002 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.002 |
+|           valid.cstr                         |     0.002 |
 |             has_mux_a.A                      |    <0.001 |
 |             ramloop[0].ram.r                 |    <0.001 |
 |               prim_init.ram                  |    <0.001 |
@@ -784,17 +787,17 @@ Table of Contents
 |               prim_init.ram                  |    <0.001 |
 |             ramloop[9].ram.r                 |    <0.001 |
 |               prim_init.ram                  |    <0.001 |
-|   mips_top0                                  |     0.008 |
+|   mips_top0                                  |     0.012 |
 |     LLbit0                                   |    <0.001 |
 |     cp0_reg0                                 |    <0.001 |
 |     ctrl0                                    |    <0.001 |
-|     data_ahb_bus_if                          |    <0.001 |
+|     data_ahb_bus_if                          |     0.001 |
 |     div0                                     |     0.002 |
 |     ex0                                      |    <0.001 |
 |     ex_mem0                                  |     0.002 |
 |     hilo_reg0                                |    <0.001 |
 |     id0                                      |    <0.001 |
-|     id_ex0                                   |     0.001 |
+|     id_ex0                                   |     0.003 |
 |     if_id0                                   |    <0.001 |
 |     inst_ahb_bus_if                          |    <0.001 |
 |     mem0                                     |    <0.001 |

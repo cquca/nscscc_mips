@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2017.1 (64-bit)
-# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
-# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Sat Aug 19 16:16:18 2017
-# Process ID: 37356
-# Current directory: C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/impl_1
-# Command line: vivado.exe -log soc_lite_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source soc_lite_top.tcl -notrace
-# Log file: C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.vdi
-# Journal file: C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/impl_1\vivado.jou
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Jul  6 12:18:02 2018
+# Process ID: 18889
+# Current directory: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/impl_1
+# Command line: vivado -log soc_lite_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source soc_lite_top.tcl -notrace
+# Log file: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.vdi
+# Journal file: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source soc_lite_top.tcl -notrace

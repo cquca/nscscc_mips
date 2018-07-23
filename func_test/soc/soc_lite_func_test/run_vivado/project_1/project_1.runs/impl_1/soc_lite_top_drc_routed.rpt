@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sat Aug 19 16:12:02 2017
-| Host         : DESKTOP-A8FCU3E running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Fri Jul  6 12:20:44 2018
+| Host         : LV-1701 running 64-bit Ubuntu 16.04.4 LTS
 | Command      : report_drc -file soc_lite_top_drc_routed.rpt -pb soc_lite_top_drc_routed.pb -rpx soc_lite_top_drc_routed.rpx
 | Design       : soc_lite_top
 | Device       : xc7a200tfbg676-2
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 19
+             Violations found: 18
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| DPIP-1   | Warning  | Input pipelining                                    | 8          |
+| DPIP-1   | Warning  | Input pipelining                                    | 7          |
 | DPOP-1   | Warning  | PREG Output pipelining                              | 4          |
 | DPOP-2   | Warning  | MREG Output pipelining                              | 4          |
 | PDRC-153 | Warning  | Gated clock check                                   | 2          |
@@ -82,11 +82,6 @@ Related violations: <none>
 
 DPIP-1#7 Warning
 Input pipelining  
-DSP mips_top0/ex0/hilo_temp__2 input mips_top0/ex0/hilo_temp__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#8 Warning
-Input pipelining  
 DSP mips_top0/ex0/hilo_temp__2 input mips_top0/ex0/hilo_temp__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
@@ -137,7 +132,7 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net mips_top0/mem_wb0/cause_o_reg[5]_1[0] is a gated clock net sourced by a combinational pin mips_top0/mem_wb0/cp0_cause_reg[10]_i_1/O, cell mips_top0/mem_wb0/cp0_cause_reg[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mips_top0/mem_wb0/E[0] is a gated clock net sourced by a combinational pin mips_top0/mem_wb0/cp0_cause_reg[10]_i_1/O, cell mips_top0/mem_wb0/cp0_cause_reg[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

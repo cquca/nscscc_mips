@@ -1,88 +1,87 @@
 #-----------------------------------------------------------
-# Vivado v2017.1 (64-bit)
-# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
-# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Sat Aug 19 16:02:25 2017
-# Process ID: 33192
-# Current directory: C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1
-# Command line: vivado.exe -log soc_lite_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lite_top.tcl
-# Log file: C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/soc_lite_top.vds
-# Journal file: C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1\vivado.jou
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Jul  6 12:16:29 2018
+# Process ID: 18748
+# Current directory: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1
+# Command line: vivado -log soc_lite_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lite_top.tcl
+# Log file: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/soc_lite_top.vds
+# Journal file: /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source soc_lite_top.tcl -notrace
 Command: synth_design -top soc_lite_top -part xc7a200tfbg676-2
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t-fbg676'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t-fbg676'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19236 
+INFO: Helper process launched with PID 18765 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 321.246 ; gain = 70.445
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1319.887 ; gain = 63.988 ; free physical = 16522 ; free virtual = 28388
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'soc_lite_top' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/TOP/soc_lite_top.v:34]
-INFO: [Synth 8-638] synthesizing module 'clk_pll' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/clk_pll_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_pll' (1#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/clk_pll_stub.v:5]
-INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mips_top.v:24]
-INFO: [Synth 8-638] synthesizing module 'pc_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/pc_reg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'pc_reg' (2#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/pc_reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'ahb_bus_if' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ahb_bus_if.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ahb_bus_if' (3#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ahb_bus_if.v:23]
-INFO: [Synth 8-638] synthesizing module 'if_id' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/if_id.v:24]
-INFO: [Synth 8-256] done synthesizing module 'if_id' (4#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/if_id.v:24]
-INFO: [Synth 8-638] synthesizing module 'id' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:23]
-INFO: [Synth 8-256] done synthesizing module 'id' (5#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:23]
-INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/regfile.v:23]
-INFO: [Synth 8-256] done synthesizing module 'regfile' (6#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/regfile.v:23]
-INFO: [Synth 8-638] synthesizing module 'id_ex' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/id_ex.v:23]
-INFO: [Synth 8-256] done synthesizing module 'id_ex' (7#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/id_ex.v:23]
-INFO: [Synth 8-638] synthesizing module 'ex' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:23]
-WARNING: [Synth 8-6014] Unused sequential element div_start_o_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:327]
-INFO: [Synth 8-256] done synthesizing module 'ex' (8#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:23]
-INFO: [Synth 8-638] synthesizing module 'ex_mem' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex_mem.v:24]
-INFO: [Synth 8-256] done synthesizing module 'ex_mem' (9#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex_mem.v:24]
-INFO: [Synth 8-638] synthesizing module 'mem' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:237]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:263]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:345]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:368]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:391]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:447]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:473]
-INFO: [Synth 8-256] done synthesizing module 'mem' (10#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:23]
-INFO: [Synth 8-638] synthesizing module 'mem_wb' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem_wb.v:23]
-INFO: [Synth 8-256] done synthesizing module 'mem_wb' (11#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem_wb.v:23]
-INFO: [Synth 8-638] synthesizing module 'hilo_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/hilo_reg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'hilo_reg' (12#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/hilo_reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'ctrl' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ctrl.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ctrl' (13#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ctrl.v:23]
-INFO: [Synth 8-638] synthesizing module 'div' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:53]
-WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:65]
-WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:71]
-INFO: [Synth 8-256] done synthesizing module 'div' (14#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:23]
-INFO: [Synth 8-638] synthesizing module 'LLbit' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/LLbit.v:23]
-INFO: [Synth 8-256] done synthesizing module 'LLbit' (15#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/LLbit.v:23]
-INFO: [Synth 8-638] synthesizing module 'cp0_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/cp0_reg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'cp0_reg' (16#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/cp0_reg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'mips_top' (17#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mips_top.v:24]
-INFO: [Synth 8-638] synthesizing module 'sramlike_to_ahb' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/AMBA/sramlike_to_ahb.v:38]
-INFO: [Synth 8-256] done synthesizing module 'sramlike_to_ahb' (18#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/AMBA/sramlike_to_ahb.v:38]
-INFO: [Synth 8-638] synthesizing module 'ahblite_axi_bridge_0' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/ahblite_axi_bridge_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'ahblite_axi_bridge_0' (19#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/ahblite_axi_bridge_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'confreg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:43]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:254]
-WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:212]
-WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:213]
-WARNING: [Synth 8-6014] Unused sequential element buf_burst_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:214]
-WARNING: [Synth 8-6014] Unused sequential element buf_lock_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:215]
-WARNING: [Synth 8-6014] Unused sequential element buf_cache_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:216]
-WARNING: [Synth 8-6014] Unused sequential element buf_prot_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:217]
-INFO: [Synth 8-256] done synthesizing module 'confreg' (20#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:43]
-INFO: [Synth 8-638] synthesizing module 'inst_ram' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/inst_ram_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'inst_ram' (21#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/inst_ram_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'data_ram' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/data_ram_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'data_ram' (22#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/realtime/data_ram_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'soc_lite_top' (23#1) [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/TOP/soc_lite_top.v:34]
+INFO: [Synth 8-6157] synthesizing module 'soc_lite_top' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/TOP/soc_lite_top.v:34]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mips_top' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mips_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/pc_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (2#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/pc_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ahb_bus_if' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ahb_bus_if.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_bus_if' (3#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ahb_bus_if.v:23]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/if_id.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (4#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/if_id.v:24]
+INFO: [Synth 8-6157] synthesizing module 'id' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'id' (5#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (6#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/id_ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (7#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/id_ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ex' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (8#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex_mem.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem' (9#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex_mem.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mem' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:23]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:237]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:263]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:345]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:368]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:391]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:447]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (10#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem_wb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (11#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem_wb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/hilo_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (12#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/hilo_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (13#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:23]
+INFO: [Synth 8-226] default block is never used [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:53]
+WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:65]
+WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'div' (14#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LLbit' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/LLbit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LLbit' (15#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/LLbit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/cp0_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (16#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/cp0_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips_top' (17#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mips_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'sramlike_to_ahb' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/AMBA/sramlike_to_ahb.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'sramlike_to_ahb' (18#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/AMBA/sramlike_to_ahb.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ahblite_axi_bridge_0' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/ahblite_axi_bridge_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ahblite_axi_bridge_0' (19#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/ahblite_axi_bridge_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:43]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:254]
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:212]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:213]
+WARNING: [Synth 8-6014] Unused sequential element buf_burst_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:214]
+WARNING: [Synth 8-6014] Unused sequential element buf_lock_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:215]
+WARNING: [Synth 8-6014] Unused sequential element buf_cache_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:216]
+WARNING: [Synth 8-6014] Unused sequential element buf_prot_reg was removed.  [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (20#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:43]
+INFO: [Synth 8-6157] synthesizing module 'inst_ram' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_ram' (21#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (22#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lite_top' (23#1) [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/TOP/soc_lite_top.v:34]
 WARNING: [Synth 8-3331] design confreg has unconnected port s_awlen[7]
 WARNING: [Synth 8-3331] design confreg has unconnected port s_awlen[6]
 WARNING: [Synth 8-3331] design confreg has unconnected port s_awlen[5]
@@ -185,7 +184,7 @@ WARNING: [Synth 8-3331] design mem has unconnected port excepttype_i[21]
 WARNING: [Synth 8-3331] design mem has unconnected port excepttype_i[20]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 379.359 ; gain = 128.559
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1384.496 ; gain = 128.598 ; free physical = 16514 ; free virtual = 28380
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -195,56 +194,61 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 379.359 ; gain = 128.559
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1384.496 ; gain = 128.598 ; free physical = 16520 ; free virtual = 28387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1384.496 ; gain = 128.598 ; free physical = 16520 ; free virtual = 28387
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg676-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp9/ahblite_axi_bridge_0_in_context.xdc] for cell 'ahblite_to_axi'
-Finished Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp9/ahblite_axi_bridge_0_in_context.xdc] for cell 'ahblite_to_axi'
-Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp11/clk_pll_in_context.xdc] for cell 'clk_pll'
-Finished Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp11/clk_pll_in_context.xdc] for cell 'clk_pll'
-Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp13/inst_ram_in_context.xdc] for cell 'inst_ram'
-Finished Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp13/inst_ram_in_context.xdc] for cell 'inst_ram'
-Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp15/data_ram_in_context.xdc] for cell 'data_ram'
-Finished Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp15/data_ram_in_context.xdc] for cell 'data_ram'
-Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc]
-WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc:5]
-Finished Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_lite_top_propImpl.xdc].
+Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'clk_pll'
+Finished Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'clk_pll'
+Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Finished Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/xilinx_ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
+Finished Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/xilinx_ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
+Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/xilinx_ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'ahblite_to_axi'
+Finished Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/xilinx_ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'ahblite_to_axi'
+Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc:5]
+Finished Parsing XDC File [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/soc_lite.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_lite_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/soc_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 744.934 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1773.441 ; gain = 0.000 ; free physical = 16197 ; free virtual = 28064
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.934 ; gain = 494.133
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1773.441 ; gain = 517.543 ; free physical = 16298 ; free virtual = 28165
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.934 ; gain = 494.133
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1773.441 ; gain = 517.543 ; free physical = 16298 ; free virtual = 28165
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp11/clk_pll_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33192-DESKTOP-A8FCU3E/dcp11/clk_pll_in_context.xdc, line 4).
-Applied set_property DONT_TOUCH = true for ahblite_to_axi. (constraint file  auto generated constraint, line ).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/clk_pll/clk_pll/clk_pll_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-18748-LV-1701/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for clk_pll. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for data_ram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for data_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ahblite_to_axi. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 744.934 ; gain = 494.133
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1773.441 ; gain = 517.543 ; free physical = 16300 ; free virtual = 28167
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ahb_bus_if'
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "reg2_read_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5587] ROM size for "reg2_read_o" is below threshold of ROM address width. It will be mapped to LUTs
@@ -285,7 +289,7 @@ INFO: [Synth 8-5546] ROM "cp0_reg_read_addr_o" won't be mapped to RAM because it
 INFO: [Synth 8-5544] ROM "hilo_temp_o" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cnt_o" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "stallreq_for_madd_msub" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:299]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:299]
 INFO: [Synth 8-5544] ROM "mem_we" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "excepttype_is_ades" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "excepttype_is_adel0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -305,16 +309,16 @@ INFO: [Synth 8-5544] ROM "mem_sel_o" won't be mapped to Block RAM because addres
 INFO: [Synth 8-5544] ROM "cp0_cause" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "new_pc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "new_pc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'div'
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "compare_o" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "status_o" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cause_o" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "epc_o" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "badvaddr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element count_o_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/cp0_reg.v:53]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:387]
 INFO: [Synth 8-5546] ROM "cr00" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cr01" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cr02" won't be mapped to RAM because it is too sparse
@@ -329,12 +333,6 @@ INFO: [Synth 8-5544] ROM "next_state2" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5544] ROM "next_state3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:284]
-WARNING: [Synth 8-6014] Unused sequential element key_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:389]
-WARNING: [Synth 8-6014] Unused sequential element state_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:417]
-WARNING: [Synth 8-6014] Unused sequential element step0_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:496]
-WARNING: [Synth 8-6014] Unused sequential element step1_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:537]
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:624]
 INFO: [Synth 8-5546] ROM "cr00" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cr01" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cr02" won't be mapped to RAM because it is too sparse
@@ -364,36 +362,50 @@ INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5544] ROM "next_state4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'cpu_data_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ahb_bus_if.v:130]
-WARNING: [Synth 8-327] inferring latch for variable 'reg1_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:1058]
-WARNING: [Synth 8-327] inferring latch for variable 'reg2_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:1083]
-WARNING: [Synth 8-327] inferring latch for variable 'stallreq_for_madd_msub_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:497]
-WARNING: [Synth 8-327] inferring latch for variable 'moveres_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:458]
-WARNING: [Synth 8-327] inferring latch for variable 'arithmeticres_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:202]
-WARNING: [Synth 8-327] inferring latch for variable 'hilo_temp1_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:505]
-WARNING: [Synth 8-327] inferring latch for variable 'hilo_temp_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:495]
-WARNING: [Synth 8-327] inferring latch for variable 'cnt_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:496]
-WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg_read_addr_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:474]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_addr_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:201]
-WARNING: [Synth 8-327] inferring latch for variable 'cp0_cause_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:125]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_data_o_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:204]
-WARNING: [Synth 8-327] inferring latch for variable 'new_pc_reg' [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/ctrl.v:44]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:387]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:387]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  iSTATE |                              000 |                              000
-                 iSTATE0 |                              001 |                              001
-                 iSTATE1 |                              011 |                              010
-                 iSTATE2 |                              100 |                              011
-                 iSTATE3 |                              101 |                              100
-                 iSTATE4 |                              010 |                              111
+                 iSTATE0 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE1 |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ahb_bus_if'
+WARNING: [Synth 8-327] inferring latch for variable 'cpu_data_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ahb_bus_if.v:130]
+WARNING: [Synth 8-327] inferring latch for variable 'reg1_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:1058]
+WARNING: [Synth 8-327] inferring latch for variable 'reg2_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/id.v:1083]
+WARNING: [Synth 8-327] inferring latch for variable 'stallreq_for_madd_msub_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:497]
+WARNING: [Synth 8-327] inferring latch for variable 'moveres_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:458]
+WARNING: [Synth 8-327] inferring latch for variable 'arithmeticres_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:202]
+WARNING: [Synth 8-327] inferring latch for variable 'hilo_temp1_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:505]
+WARNING: [Synth 8-327] inferring latch for variable 'hilo_temp_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:495]
+WARNING: [Synth 8-327] inferring latch for variable 'cnt_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:496]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg_read_addr_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ex.v:474]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_addr_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:201]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_cause_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_data_o_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/mem.v:204]
+WARNING: [Synth 8-327] inferring latch for variable 'new_pc_reg' [/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ctrl.v:44]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                              000
+                  iSTATE |                              101 |                              001
+                 iSTATE0 |                              100 |                              010
+                 iSTATE1 |                              011 |                              011
+                 iSTATE2 |                              010 |                              100
+                 iSTATE3 |                              001 |                              111
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'confreg'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:387]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 744.934 ; gain = 494.133
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1773.441 ; gain = 517.543 ; free physical = 16282 ; free virtual = 28150
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -425,7 +437,7 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 5     
 	                4 Bit    Registers := 6     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 40    
 +---RAMs : 
 	             1024 Bit         RAMs := 1     
@@ -436,15 +448,15 @@ Detailed RTL Component Info :
 	   3 Input     64 Bit        Muxes := 1     
 	   4 Input     64 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 104   
-	   4 Input     32 Bit        Muxes := 15    
-	   3 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 14    
 	  11 Input     32 Bit        Muxes := 3     
 	   8 Input     32 Bit        Muxes := 1     
 	  33 Input     32 Bit        Muxes := 1     
 	   5 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 7     
 	   6 Input     32 Bit        Muxes := 4     
 	  15 Input     32 Bit        Muxes := 1     
-	  10 Input     32 Bit        Muxes := 4     
+	  10 Input     32 Bit        Muxes := 5     
 	   2 Input     30 Bit        Muxes := 2     
 	   7 Input     24 Bit        Muxes := 1     
 	   3 Input     16 Bit        Muxes := 1     
@@ -453,23 +465,23 @@ Detailed RTL Component Info :
 	  17 Input     16 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 2     
 	  33 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 6     
 	   4 Input      8 Bit        Muxes := 2     
 	  28 Input      7 Bit        Muxes := 1     
 	   9 Input      7 Bit        Muxes := 1     
 	  11 Input      7 Bit        Muxes := 1     
 	   8 Input      7 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 48    
-	   4 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 9     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 11    
 	  11 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 3     
 	   6 Input      5 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 4     
 	   9 Input      4 Bit        Muxes := 1     
 	  11 Input      4 Bit        Muxes := 1     
-	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 6     
 	  15 Input      4 Bit        Muxes := 1     
 	   6 Input      4 Bit        Muxes := 1     
@@ -479,28 +491,25 @@ Detailed RTL Component Info :
 	   9 Input      3 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
 	  33 Input      3 Bit        Muxes := 4     
-	   2 Input      3 Bit        Muxes := 15    
+	   2 Input      3 Bit        Muxes := 22    
 	   4 Input      3 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 3     
-	  13 Input      3 Bit        Muxes := 1     
-	   6 Input      2 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 15    
 	   9 Input      2 Bit        Muxes := 2     
 	  33 Input      2 Bit        Muxes := 1     
 	  27 Input      2 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 9     
-	   3 Input      2 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 118   
-	   5 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 23    
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 124   
+	   3 Input      1 Bit        Muxes := 22    
 	  28 Input      1 Bit        Muxes := 3     
-	   3 Input      1 Bit        Muxes := 8     
 	   8 Input      1 Bit        Muxes := 11    
 	  11 Input      1 Bit        Muxes := 6     
 	  33 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 11    
 	   9 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
 	  27 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 7     
@@ -535,17 +544,15 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 3     
 	                4 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 4     
 	   2 Input     32 Bit        Muxes := 4     
-	   3 Input     32 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 7     
 Module if_id 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -564,12 +571,12 @@ Detailed RTL Component Info :
 	   5 Input     32 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
 	  33 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 6     
 	   4 Input      8 Bit        Muxes := 1     
 	  28 Input      7 Bit        Muxes := 1     
 	   9 Input      7 Bit        Muxes := 1     
 	  11 Input      7 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 8     
 	  11 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 3     
 	   9 Input      4 Bit        Muxes := 1     
@@ -578,7 +585,7 @@ Detailed RTL Component Info :
 	   9 Input      3 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
 	  33 Input      3 Bit        Muxes := 4     
-	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 6     
 	   4 Input      3 Bit        Muxes := 1     
 	   9 Input      2 Bit        Muxes := 2     
 	  33 Input      2 Bit        Muxes := 1     
@@ -589,7 +596,7 @@ Detailed RTL Component Info :
 	   8 Input      1 Bit        Muxes := 3     
 	  11 Input      1 Bit        Muxes := 5     
 	  33 Input      1 Bit        Muxes := 7     
-	   2 Input      1 Bit        Muxes := 20    
+	   2 Input      1 Bit        Muxes := 24    
 	   4 Input      1 Bit        Muxes := 5     
 	   9 Input      1 Bit        Muxes := 4     
 	   5 Input      1 Bit        Muxes := 1     
@@ -703,18 +710,17 @@ Detailed RTL Component Info :
 	               64 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     65 Bit        Muxes := 5     
 	   4 Input     65 Bit        Muxes := 2     
-	   4 Input     64 Bit        Muxes := 1     
 	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 2     
-	   4 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 6     
 Module LLbit 
@@ -733,7 +739,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 8     
 	   6 Input     32 Bit        Muxes := 3     
-	  10 Input     32 Bit        Muxes := 2     
+	  10 Input     32 Bit        Muxes := 3     
 	   7 Input     24 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 10    
 	   6 Input      1 Bit        Muxes := 4     
@@ -772,9 +778,8 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	   6 Input      4 Bit        Muxes := 1     
 	  10 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 10    
-	   6 Input      3 Bit        Muxes := 2     
-	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 16    
+	   6 Input      3 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 18    
 	   8 Input      1 Bit        Muxes := 8     
@@ -793,6 +798,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5545] ROM "reg1_read_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "reg2_read_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "aluop_o" won't be mapped to RAM because it is too sparse
@@ -827,13 +833,6 @@ DSP Report: Generating DSP hilo_temp, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
 DSP Report: operator hilo_temp is absorbed into DSP hilo_temp.
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element count_o_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/MIPS/cp0_reg.v:53]
-WARNING: [Synth 8-6014] Unused sequential element state_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:417]
-WARNING: [Synth 8-6014] Unused sequential element key_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:389]
-WARNING: [Synth 8-6014] Unused sequential element step1_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:537]
-WARNING: [Synth 8-6014] Unused sequential element step0_count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:496]
-WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:284]
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/rtl/CONFREG/confreg.v:624]
 INFO: [Synth 8-3886] merging instance 'mips_top0/cp0_reg0/config_o_reg[2]' (FDRE) to 'mips_top0/cp0_reg0/config_o_reg[0]'
 INFO: [Synth 8-3886] merging instance 'mips_top0/cp0_reg0/prid_o_reg[2]' (FDRE) to 'mips_top0/cp0_reg0/config_o_reg[0]'
 INFO: [Synth 8-3886] merging instance 'mips_top0/cp0_reg0/config_o_reg[1]' (FDRE) to 'mips_top0/cp0_reg0/config_o_reg[0]'
@@ -1029,11 +1028,11 @@ WARNING: [Synth 8-3332] Sequential element (sramlike_to_ahb/mem_3bytes_size_reg[
 WARNING: [Synth 8-3332] Sequential element (sramlike_to_ahb/mem_3bytes_addr_reg[0]) is unused and will be removed from module soc_lite_top.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'mips_top0/ex0/cnt_o_reg[0]' (LDC) to 'mips_top0/ex0/stallreq_for_madd_msub_reg'
-INFO: [Synth 8-3886] merging instance 'mips_top0/inst_ahb_bus_if/ben_reg[0]' (FDRE) to 'mips_top0/inst_ahb_bus_if/ben_reg[1]'
-INFO: [Synth 8-3886] merging instance 'mips_top0/inst_ahb_bus_if/ben_reg[1]' (FDRE) to 'mips_top0/inst_ahb_bus_if/ben_reg[2]'
-INFO: [Synth 8-3886] merging instance 'mips_top0/inst_ahb_bus_if/ben_reg[3]' (FDRE) to 'mips_top0/inst_ahb_bus_if/ben_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips_top0/inst_ahb_bus_if/ben_reg[0]' (FDRE) to 'mips_top0/inst_ahb_bus_if/ben_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips_top0/inst_ahb_bus_if/ben_reg[1]' (FDRE) to 'mips_top0/inst_ahb_bus_if/ben_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips_top0/inst_ahb_bus_if/ben_reg[2]' (FDRE) to 'mips_top0/inst_ahb_bus_if/ben_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:15 . Memory (MB): peak = 754.805 ; gain = 504.004
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:59 . Memory (MB): peak = 1773.441 ; gain = 517.543 ; free physical = 16243 ; free virtual = 28119
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1075,13 +1074,27 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_pll/clk_out1' to pin 
 WARNING: [Synth 8-565] redefining clock 'clk'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:34 . Memory (MB): peak = 828.762 ; gain = 577.961
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:08 . Memory (MB): peak = 1773.441 ; gain = 517.543 ; free physical = 16098 ; free virtual = 27974
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:48 . Memory (MB): peak = 973.363 ; gain = 722.563
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 1832.926 ; gain = 577.027 ; free physical = 16038 ; free virtual = 27913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------------+------------+-----------+----------------------+---------------+
+|Module Name        | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++-------------------+------------+-----------+----------------------+---------------+
+|mips_top0/regfile1 | regs_reg   | Implied   | 32 x 32              | RAM32M x 12   | 
++-------------------+------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1093,7 +1106,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:53 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:19 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16031 ; free virtual = 27907
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1117,7 +1130,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:55 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16031 ; free virtual = 27907
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1130,7 +1143,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:55 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16032 ; free virtual = 27907
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1142,25 +1155,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:20 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16033 ; free virtual = 27908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:20 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16033 ; free virtual = 27908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:20 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16032 ; free virtual = 27908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:45 ; elapsed = 00:01:56 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:20 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16033 ; free virtual = 27908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1187,15 +1200,15 @@ Report Cell Usage:
 |5     |BUFG                 |    11|
 |6     |CARRY4               |   233|
 |7     |DSP48E1              |     4|
-|8     |LUT1                 |   407|
-|9     |LUT2                 |   756|
-|10    |LUT3                 |   420|
-|11    |LUT4                 |   499|
-|12    |LUT5                 |   778|
-|13    |LUT6                 |  1705|
-|14    |MUXF7                |    12|
+|8     |LUT1                 |   210|
+|9     |LUT2                 |   626|
+|10    |LUT3                 |   437|
+|11    |LUT4                 |   339|
+|12    |LUT5                 |   853|
+|13    |LUT6                 |  2038|
+|14    |MUXF7                |    46|
 |15    |RAM32M               |    12|
-|16    |FDRE                 |  2013|
+|16    |FDRE                 |  2020|
 |17    |FDSE                 |    20|
 |18    |LD                   |    69|
 |19    |LDC                  |   357|
@@ -1207,35 +1220,35 @@ Report Instance Areas:
 +------+--------------------+----------------+------+
 |      |Instance            |Module          |Cells |
 +------+--------------------+----------------+------+
-|1     |top                 |                |  7605|
-|2     |  confreg           |confreg         |  1166|
-|3     |  mips_top0         |mips_top        |  5899|
-|4     |    ctrl0           |ctrl            |    32|
-|5     |    LLbit0          |LLbit           |     1|
-|6     |    cp0_reg0        |cp0_reg         |   271|
-|7     |    data_ahb_bus_if |ahb_bus_if      |   367|
-|8     |    div0            |div             |   450|
-|9     |    ex0             |ex              |   356|
-|10    |    ex_mem0         |ex_mem          |  1024|
-|11    |    hilo_reg0       |hilo_reg        |    64|
-|12    |    id0             |id              |   111|
-|13    |    id_ex0          |id_ex           |  1656|
-|14    |    if_id0          |if_id           |   750|
-|15    |    inst_ahb_bus_if |ahb_bus_if_0    |   178|
+|1     |top                 |                |  7584|
+|2     |  confreg           |confreg         |  1091|
+|3     |  mips_top0         |mips_top        |  5953|
+|4     |    id0             |id              |   109|
+|5     |    ctrl0           |ctrl            |    32|
+|6     |    LLbit0          |LLbit           |     1|
+|7     |    cp0_reg0        |cp0_reg         |   232|
+|8     |    data_ahb_bus_if |ahb_bus_if      |   367|
+|9     |    div0            |div             |   445|
+|10    |    ex0             |ex              |   369|
+|11    |    ex_mem0         |ex_mem          |  1005|
+|12    |    hilo_reg0       |hilo_reg        |    64|
+|13    |    id_ex0          |id_ex           |  1905|
+|14    |    if_id0          |if_id           |   603|
+|15    |    inst_ahb_bus_if |ahb_bus_if_0    |   187|
 |16    |    mem0            |mem             |   136|
-|17    |    mem_wb0         |mem_wb          |   372|
-|18    |    pc_reg0         |pc_reg          |   119|
+|17    |    mem_wb0         |mem_wb          |   397|
+|18    |    pc_reg0         |pc_reg          |    89|
 |19    |    regfile1        |regfile         |    12|
-|20    |  sramlike_to_ahb   |sramlike_to_ahb |   212|
+|20    |  sramlike_to_ahb   |sramlike_to_ahb |   210|
 +------+--------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:45 ; elapsed = 00:01:56 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:20 . Memory (MB): peak = 1890.941 ; gain = 635.043 ; free physical = 16032 ; free virtual = 27908
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 329 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 1012.313 ; gain = 395.938
-Synthesis Optimization Complete : Time (s): cpu = 00:01:45 ; elapsed = 00:01:57 . Memory (MB): peak = 1012.313 ; gain = 761.512
+Synthesis finished with 0 errors, 0 critical warnings and 227 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 1890.941 ; gain = 246.098 ; free physical = 16094 ; free virtual = 27969
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:20 . Memory (MB): peak = 1890.949 ; gain = 635.043 ; free physical = 16096 ; free virtual = 27972
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 690 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 736 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1245,9 +1258,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 357 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
 
-301 Infos, 243 Warnings, 0 Critical Warnings and 0 Errors encountered.
+INFO: [Common 17-83] Releasing license: Synthesis
+307 Infos, 224 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:02:04 . Memory (MB): peak = 1012.313 ; gain = 775.473
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CQU-LS/Desktop/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/soc_lite_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1012.313 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 19 16:04:36 2017...
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:23 . Memory (MB): peak = 1922.957 ; gain = 734.539 ; free physical = 16138 ; free virtual = 28006
+INFO: [Common 17-1381] The checkpoint '/home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/run_vivado/project_1/project_1.runs/synth_1/soc_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_lite_top_utilization_synth.rpt -pb soc_lite_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1946.969 ; gain = 0.000 ; free physical = 16140 ; free virtual = 28008
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  6 12:18:01 2018...

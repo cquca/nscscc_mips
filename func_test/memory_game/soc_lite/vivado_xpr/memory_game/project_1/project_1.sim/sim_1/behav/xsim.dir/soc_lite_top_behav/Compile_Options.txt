@@ -1,1 +1,0 @@
--wto "11b7590602464b448c11a55bd28ced2b" --debug "typical" --relax --mt "2" -L "blk_mem_gen_v8_3_6" -L "xil_defaultlib" -L "ahblite_axi_bridge_v3_0_10" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "soc_lite_top_behav" "xil_defaultlib.soc_lite_top" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="data_ram_synth_1" LaunchDir="C:/loongson/20170531/func_test/soc/soc_lite_func_test_delay_ram/run_vivado/project_1/project_1.runs/data_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-

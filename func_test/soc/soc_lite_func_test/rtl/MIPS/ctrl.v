@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`include "defines.vh"
+`include "defines.h"
 module ctrl(
 	input wire rst,
 	input wire stallreq_from_id,

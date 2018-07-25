@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`include "defines.vh"
+`include "defines.h"
 module ahb_bus_if(
 	input wire clk,
 	input wire rst,

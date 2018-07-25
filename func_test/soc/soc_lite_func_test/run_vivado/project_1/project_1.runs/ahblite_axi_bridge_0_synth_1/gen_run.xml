@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ahblite_axi_bridge_0_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1530850012">
-  <File Type="VDS-TIMING-PB" Name="ahblite_axi_bridge_0_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ahblite_axi_bridge_0_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="ahblite_axi_bridge_0.dcp"/>
-  <File Type="REPORTS-TCL" Name="ahblite_axi_bridge_0_reports.tcl"/>
-  <File Type="PA-TCL" Name="ahblite_axi_bridge_0.tcl"/>
-  <File Type="RDS-RDS" Name="ahblite_axi_bridge_0.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="ahblite_axi_bridge_0_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="ahblite_axi_bridge_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ahblite_axi_bridge_0_utilization_synth.pb"/>
+  <File Type="RDS-RDS" Name="ahblite_axi_bridge_0.vds"/>
+  <File Type="RDS-DCP" Name="ahblite_axi_bridge_0.dcp"/>
+  <File Type="PA-TCL" Name="ahblite_axi_bridge_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="ahblite_axi_bridge_0_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ahblite_axi_bridge_0">
     <File Path="$PPRDIR/../../rtl/xilinx_ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0.xci">
       <FileInfo>
@@ -36,9 +33,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

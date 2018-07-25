@@ -31,7 +31,8 @@ set_property ip_output_repo /home/lv/VivadoProjects/nscscc_mips/func_test/soc/so
 set_property ip_cache_permissions {read write} [current_project]
 add_files /home/lv/VivadoProjects/nscscc_mips/func_test/soft/nodelay_ram_coe/inst_ram.coe
 add_files /home/lv/VivadoProjects/nscscc_mips/func_test/soft/nodelay_ram_coe/data_ram.coe
-read_verilog /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/defines.vh
+read_verilog /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/defines.h
+set_property file_type "Verilog Header" [get_files /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/defines.h]
 read_verilog -library xil_defaultlib {
   /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/LLbit.v
   /home/lv/VivadoProjects/nscscc_mips/func_test/soc/soc_lite_func_test/rtl/MIPS/ahb_bus_if.v
